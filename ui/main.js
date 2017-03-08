@@ -10,7 +10,7 @@ button.onclick= function(){
   
   //render the varaible in the corerrct sapn
  
-  conter = counter + 1;
+  counter = counter + 1;
 
   var span = document.getElementById('count');
 
