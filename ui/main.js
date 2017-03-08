@@ -1,16 +1,13 @@
-console.log('Loaded!');
-
-//change the content of main-txt
-var element=document.getElementById('main-txt');
-element.innerHTML='Kinjal Roy';
-
-//move the img
-var img=document.getElementById('madi');
-var marginLeft=0;
-function moveRight(){
-    marginLeft=marginLeft+ 1;
-    img.style.marginLeft= marginLeft+ 'px';
-}
-img.onclick= function(){
-    var interval= setInterval(moveRight, 50);
+//Counter code
+var button=document.getElementById('counter');
+var counter=0;
+button.onclick= function(){
+  //make a request to counter endpoint
+  
+  //capture a response and store it in the variable
+  
+  //render the varaible in the corerrct sapn
+  conter++;
+  var span=document.getElementById('count');
+  span.innerHTML=counter.toString();
 };
