@@ -7,7 +7,8 @@ button.onclick= function(){
   //capture a response and store it in the variable
   
   //render the varaible in the corerrct sapn
-  conter=counter+ 1;
-  var span=document.getElementById('count');
-  span.innerHTML=counter.toString();
+ 
+  conter = counter + 1;
+  var span = document.getElementById('count');
+  span.innerHTML = counter.toString();
 };
