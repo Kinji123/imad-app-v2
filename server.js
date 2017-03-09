@@ -47,7 +47,8 @@ var htmlTemplate = `
     <head>
        <title>
            ${title}
-       </title> 
+       </title>
+       
        <meta name= "viewport" content="width=device-width, initial-scale=1" />
        <link href="/ui/style.css" rel="stylesheet" />
     </head>
@@ -72,6 +73,7 @@ var htmlTemplate = `
 `;
 return htmlTemplate;
 }
+
 
 app.get('/:articleName',function(req,res){
    var articleName = req.params.articleName;
