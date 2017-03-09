@@ -106,6 +106,13 @@ app.get('/ui/madi.png', function (req, res) {
 var names=[];
 app.get('/submit-name/:name',function (req,res){
     //get the from the request object
+    var name = req.query.name;//TODO
+    names.push(name);
+    res.send(JSON.stringify(names)); //TODO
+});
+
+app.get('/submit-name',function (req,res){ // URL: /submit-name?name=xxxx
+    //get the from the request object
     var name = req.params.name;//TODO
     names.push(name);
     res.send(JSON.stringify(names)); //TODO
