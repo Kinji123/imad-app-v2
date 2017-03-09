@@ -73,6 +73,11 @@ var htmlTemplate = `
 return htmlTemplate;
 }
 
+app.get('/:articleName',function(req,res){
+   var articleName = req.params.articleName;
+   res.send(createTemplete(articles[articleName]));  
+});
+
 var counter=0;
 app.get('/counter', function(req,res){
    counter= counter + 1;
@@ -85,11 +90,6 @@ app.get('/', function (req, res) {
 
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
-});
-
-app.get('/:articleName',function(req,res){
-   var articleName = req.params.articleName;
-   res.send(createTemplete(articles[articleName]));  
 });
 
 app.get('/ui/style.css', function (req, res) {
