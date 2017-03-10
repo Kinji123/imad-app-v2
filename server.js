@@ -94,8 +94,8 @@ app.get('/submit-name',function (req,res){ // URL: /submit-name?name=xxxx
 });
  
  var comments=[];
- app.get('/comments', function(req,res){
-     var comment=req.query.comment;
+ app.get('/comments',function(req,res){
+     var comment= req.query.comment;
      comments.push(comment);
      res.send(JSON.stringyfy(comments));
  });
