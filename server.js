@@ -87,12 +87,17 @@ app.get('/counter', function(req,res){
 
 var names=[];
 app.get('/submit-name',function (req,res){ // URL: /submit-name?name=xxxx
-    //get the from the request object
+    //get the request object
      var name = req.query.name;//TODO
     names.push(name);
     res.send(JSON.stringify(names)); //TODO
 });
-
+ 
+ app.get('/comments', function(req,res){
+     var comment=req.query.comment;
+     comments.push(comment);
+     res.send(JSON.stringyfy(comments));
+ });
 
 app.get('/:articleName',function(req,res){
    var articleName = req.params.articleName;
