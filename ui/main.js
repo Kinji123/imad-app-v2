@@ -51,7 +51,7 @@ submit.onclick = function(){
 var commentInput=document.getElementById('comment');
 var comment=commentInput.value;
 //make a request
-request.open('GET','http://kinji123.imad.hasura-app.io/submit-name?name=' + name, true);
+request.open('GET','http://kinji123.imad.hasura-app.io', true);
 request.send(null);
 };
 
