@@ -25,9 +25,9 @@ request.send(null);
 //capture name
 
 var submit=document.getElementById('submit_btn');
-var submit=document.getElementById('submit_btn2');
+var submit2=document.getElementById('submit_btn2');
 
-submit.onclick = function(){
+submit2.onclick = function(){
 //create a request to counter endpoint
   var request= new XMLHttpRequest();
   
