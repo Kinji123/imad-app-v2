@@ -7,7 +7,7 @@ var config ={
   host: 'db.imad.hasura-app.io',
   user: 'kinji123',
   database: 'kinji123',
-  password: 'db-kinji123-85389'//process.env.DB_PASSWORD
+  password: process.env.DB_PASSWORD
 };
 var app = express();
 app.use(morgan('combined'));
