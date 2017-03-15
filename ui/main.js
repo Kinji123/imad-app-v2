@@ -5,8 +5,6 @@ var button=document.getElementById('counter');
 button.onclick= function(){
   //create a request to counter endpoint
   var request= new XMLHttpRequest();
-  
-  
   //capture a response and store it in the variable
   request.onreadystatechange= function(){
     if(request.readyState === XMLHttpRequest.DONE){
@@ -44,7 +42,7 @@ submit2.onclick = function(){
             list+='<li>' + comments[i] + '</li>';
         }
         var ul=document.getElementById('commentlist');
-        ul.innerHTML=list;
+        ul.innerHTML+=list;
         }
     }
 };
