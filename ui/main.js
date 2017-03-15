@@ -42,7 +42,7 @@ submit2.onclick = function(){
             list+='<li>' + comments[i] + '</li>';
         }
         var ul=document.getElementById('commentlist');
-        ul.innerHTML+=list;
+        ul.innerHTML=list;
         }
     }
 };
