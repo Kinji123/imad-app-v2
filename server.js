@@ -3,7 +3,7 @@ var morgan = require('morgan');
 var path = require('path');
 var Pool = require('pg').Pool;
 var crypto=require('crypto');
-var body-Parser=require('body-parser');
+var body-Parser=require('body-parser'); //import
 var config ={
   host: 'db.imad.hasura-app.io',
   user: 'kinji123',
