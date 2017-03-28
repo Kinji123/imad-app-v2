@@ -3,7 +3,8 @@ var morgan = require('morgan');
 var path = require('path');
 var Pool = require('pg').Pool;
 var crypto=require('crypto');
-var body-Parser=require('body-parser'); //import
+var bodyParser=require('body-parser'); //import
+
 var config ={
   host: 'db.imad.hasura-app.io',
   user: 'kinji123',
@@ -12,7 +13,7 @@ var config ={
 };
 var app = express();
 app.use(morgan('combined'));
-app.use(body-Parser.json());
+app.use(bodyParser.json());
 
 var articles = {
     'article-one': {
